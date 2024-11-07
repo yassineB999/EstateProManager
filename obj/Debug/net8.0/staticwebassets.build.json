@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ud0FSdsKQYU3+aIVust7losEvKXPYCYeaBp2FC3cpbc=",
+  "Source": "EstateProManager",
+  "BasePath": "_content/EstateProManager",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EstateProManager\\wwwroot",
+      "Source": "EstateProManager",
+      "ContentRoot": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\",
+      "BasePath": "_content/EstateProManager",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
