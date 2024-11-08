@@ -10,11 +10,15 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
-    <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="efpt.config.json.user" />
+    <None Include="wwwroot\landing_assets\css\.DS_Store" />
+    <None Include="wwwroot\landing_assets\fonts\.DS_Store" />
+    <None Include="wwwroot\landing_assets\images\.DS_Store" />
+    <None Include="wwwroot\landing_assets\scss\.DS_Store" />
+    <None Include="wwwroot\landing_assets\scss\bootstrap\.DS_Store" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +29,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
   </ItemGroup>
 
 </Project>

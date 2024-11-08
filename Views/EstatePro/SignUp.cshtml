@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "EstatePro | Inscription";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition login-page">
+    <div class="register-box">
+        <div class="register-logo">
+            <a href="#"><b>EstatePro</b> Inscription</a>
+        </div>
+
+        <div class="card">
+            <div class="card-body register-card-body">
+                <p class="login-box-msg">Créer un nouveau compte</p>
+
+                <form action="#" method="post">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="CIN" id="cin">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Prénom" id="prenom">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nom" id="nom">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" id="email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" placeholder="Mot de passe" id="motDePasse">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-lock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" placeholder="Confirmation" id="confirmation">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-lock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control" placeholder="Date de naissance" id="dateNaissance">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Numéro de téléphone" id="numeroTelephone">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-phone"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <textarea type="text" class="form-control" placeholder="Adresse" id="adresse"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                                <label for="agreeTerms">
+                                    J'accepte les <a href="#">termes</a>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="button" id="registerButton" class="btn btn-primary btn-block">S'inscrire</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+
+                </form>
+
+                <a href="@Url.Action("SignIn")" class="text-center">J'ai déjà un compte</a>
+            </div>
+            <!-- /.form-box -->
+        </div><!-- /.card -->
+    </div>
+    <!-- /.register-box -->
+</div>
+
+<script src="~/landing_assets/custom/signupScript.js"></script>
