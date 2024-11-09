@@ -1,0 +1,172 @@
+﻿@using EstateProManager.Models;
+@{
+    ViewData["Title"] = "EstateProManager | Mes Proprietees";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<script>
+    var id = -1;
+</script>
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="card card-solid">
+                    <div class="card-header">
+                        <h3 class="card-title">Informations sur les Propriétées acheter</h3>
+                    </div>
+                    <div class="card-body pb-0">
+                        <div class="row">
+                            @foreach (Vente item in Model.clientPropertiesAcheter)
+                            {
+                                <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column property-card">
+                                    <div class="card bg-light d-flex flex-fill">
+                                        <div class="card-header text-muted border-bottom-0">
+                                            @item.IdProprieteNavigation.Emplacement
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="lead"><b>Type : @item.IdProprieteNavigation.Type <br /> Taille : @item.IdProprieteNavigation.Taille</b></h2>
+                                                    <p class="text-muted text-sm"><b>Caracteristique: </b> @item.IdProprieteNavigation.Caracteristiques </p>
+                                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Date de construction: @item.IdProprieteNavigation.DateDeConstruction</li>
+                                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-dollar-sign"></i></span> Valeur: @item.IdProprieteNavigation.Valeur</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-5 text-center">
+                                                    <img src="@item.IdProprieteNavigation.Images" alt="user-avatar" class="img-circle img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="text-right">
+                                                <a href="#" data-target="#editcreatemodal" data-property-id="@item.IdProprieteNavigation.Id" onclick="openModal(@item.IdProprieteNavigation.Id)" class="btn btn-sm btn-warning">
+                                                    <i class="fas fa-file"></i> Poser une demande
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <nav aria-label="Contacts Page Navigation">
+                            <ul class="pagination justify-content-center m-0" id="paginationContainer">
+                                <!-- Pagination will be dynamically generated here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /.card-footer -->
+                </div>
+
+                <div class="card card-solid">
+                    <div class="card-header">
+                        <h3 class="card-title">Informations sur mes contrats de location</h3>
+                    </div>
+                    <div class="card-body pb-0">
+                        <div class="row">
+                            @foreach (Contrat item in Model.clientProprieteLocation)
+                            {
+                                <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column property-card">
+                                    <div class="card bg-light d-flex flex-fill">
+                                        <div class="card-header text-muted border-bottom-0">
+                                            @item.IdProprieteNavigation.Emplacement
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="lead"><b>Type : @item.IdProprieteNavigation.Type <br /> Taille : @item.IdProprieteNavigation.Taille</b></h2>
+                                                    <p class="text-muted text-sm"><b>Caracteristique: </b> @item.IdProprieteNavigation.Caracteristiques </p>
+                                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Date de construction: @item.IdProprieteNavigation.DateDeConstruction</li>
+                                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-dollar-sign"></i></span> Valeur: @item.IdProprieteNavigation.Valeur</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-5 text-center">
+                                                    <img src="@item.IdProprieteNavigation.Images" alt="user-avatar" class="img-circle img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="text-right">
+                                                <a href="#" data-target="#editcreatemodal" data-property-id="@item.IdProprieteNavigation.Id" onclick="openModal(@item.IdProprieteNavigation.Id)" class="btn btn-sm btn-warning">
+                                                    <i class="fas fa-file"></i> Poser une demande
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+<script src="~/dashboardclient_assets/custom/mypropertiesScript.js"></script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="editcreatemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modaltitle">RANDOM</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3"> <input class="form-control" type="text" id="id" name="id" /> </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Type de demande" id="typedemande">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Detail de demande" id="detaildemande">
+                </div>
+
+                <input type="checkbox" id="moredetails">
+                <label for="moredetails">Plus d'information sur la demande ? Tache</label>
+
+                <div class="input-group mb-3">
+                    <textarea class="form-control" id="detailtache" placeholder="Detail de la tache" hidden></textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closemodal" data-dismiss="modal">Quitter</button>
+                <button type="button" class="btn btn-primary" id="editcreate">Envoyer Demande</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var checkbox = document.getElementById("moredetails");
+    var textarea = document.getElementById("detailtache");
+
+    checkbox.addEventListener("change", function () {
+        textarea.hidden = !checkbox.checked;
+    });
+</script>

@@ -26,6 +26,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\HP_Y\source\repos\EstateProManager
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/Footer_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEZvb3Rlcl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/Header_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEhlYWRlcl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XE15QWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/MyDemandes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XE15RGVtYW5kZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/MyDemandTache.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XE15RGVtYW5kVGFjaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP_Y/source/repos/EstateProManager/Views/Client/MyProperties.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XE15UHJvcGVydGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/HP_Y/source/repos/EstateProManager/Views/EstatePro/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YXRlUHJvXEhvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
