@@ -1,0 +1,147 @@
+﻿@using EstateProManager.Models;
+@{
+    ViewData["Title"] = "EstatePro | Gestion Proprietes";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="card card-solid">
+                    <div class="card-header">
+                        <h3 class="card-title">Informations sur les Propriétées</h3>
+                    </div>
+                    <div class="card-body pb-0">
+                        <button class="form-control btn-primary new-btn" data-toggle="modal" data-target="#createProperty">Creer une nouvelle propriete</button>
+                        <br />
+                        <div class="row">
+                            @foreach (Propriete item in Model.proprietes)
+                            {
+                                <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column property-card">
+                                    <div class="card bg-light d-flex flex-fill">
+                                        <div class="card-header text-muted border-bottom-0">
+                                            @item.Emplacement
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="lead"><b>Type : @item.Type <br /> Taille : @item.Taille</b></h2>
+                                                    <p class="text-muted text-sm"><b>Caracteristique: </b> @item.Caracteristiques </p>
+                                                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Date de construction: @item.DateDeConstruction</li>
+                                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-dollar-sign"></i></span> Valeur: @item.Valeur</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-5 text-center">
+                                                    <img src="@item.Images" alt="user-avatar" class="img-circle img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="text-right">
+                                                <a href="#" onclick="deleteProperty(@item.Id)" class="btn btn-sm btn-danger">
+                                                    <i class="fas fa-trash-alt"></i> Supprimer la propriete
+                                                </a>
+
+                                                <a href="@Url.Action("ManageProperty", new { id = item.Id })" class="btn btn-sm btn-primary">
+                                                    <i class="fas fa-building"></i> Voir la propriete
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <nav aria-label="Contacts Page Navigation">
+                            <ul class="pagination justify-content-center m-0" id="paginationContainer">
+                                <!-- Pagination will be dynamically generated here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /.card-footer -->
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+
+<script src="~/dashboard_assets/custom/managepropertiesScript.js"></script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="createProperty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informations sur la Propriété</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="proprieteForm">
+                    <div class="form-group">
+                        <label for="type">Type :</label>
+                        <input type="text" class="form-control" id="type" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taille">Taille :</label>
+                        <input type="number" class="form-control" id="taille" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emplacement">Emplacement :</label>
+                        <input type="text" class="form-control" id="emplacement" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="caracteristiques">Caractéristiques :</label>
+                        <input type="text" class="form-control" id="caracteristiques">
+                    </div>
+                    <div class="form-group">
+                        <label for="images">Image :</label>
+                        <div class="input-group">
+                            <div class="input-group">
+                                <input type="file" class="custom-file-input" id="images">
+                                <label class="custom-file-label" for="images">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="documents">Document :</label>
+                        <div class="input-group">
+                            <div class="input-group">
+                                <input type="file" class="custom-file-input" id="documents" accept=".pdf, .doc, .docx">
+                                <label class="custom-file-label" for="documents">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="valeur">Valeur :</label>
+                        <input type="number" class="form-control" id="valeur">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateDeConstruction">Date de Construction :</label>
+                        <input type="date" class="form-control" id="dateDeConstruction">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="submitProperty">Soumettre</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

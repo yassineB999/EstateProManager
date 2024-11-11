@@ -1,0 +1,159 @@
+﻿@using EstateProManager.Models;
+@{
+    ViewData["Title"] = "EstatePro | Gestion Ventes";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="containt-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Informations sur les ventes</h3>
+                                </div>
+
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <button class="form-control btn-primary new-btn" onclick="$('#submitVente').html('Soumettre')" data-toggle="modal" data-target="#createEditBuyer">Creer Une Vente</button>
+                                    <br />
+                                    <table id="buyersDataTable" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Acheteur</th>
+                                                <th>Vendeur</th>
+                                                <th>Date Vente</th>
+                                                <th>Prix Vente</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (Vente item in Model.ventes)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdAcheteurNavigation.Prenom) @Html.DisplayFor(modelItem => item.IdAcheteurNavigation.Nom)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdVendeurNavigation.Prenom) @Html.DisplayFor(modelItem => item.IdVendeurNavigation.Nom)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.DateVente)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.PrixVente)
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary edit-btn"
+                                                                data-toggle="modal" data-target="#createEditBuyer"
+                                                                data-id="@item.Id" data-proprieteinfo="@item.IdProprieteNavigation.Type /\ @item.IdProprieteNavigation.Taille" data-idpropriete="@item.IdProprieteNavigation.Id" data-idacheteur="@item.IdAcheteurNavigation.Id" data-idvendeur="@item.IdVendeurNavigation.Id"
+                                                                data-date="@item.DateVente" data-prix="@item.PrixVente">
+                                                            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                                                        </button>
+
+                                                        <button type="button" onclick="deleteBuyer(@item.Id)" class="btn btn-danger">
+                                                            <i class="fas fa-trash" aria-hidden="true"></i>
+                                                        </button>
+                                                        <a href="@Url.Action("ManageProperty", new { id = item.IdProprieteNavigation.Id })">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fas fa-eye" aria-hidden="true"></i>
+                                                            </button>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Acheteur</th>
+                                                <th>Vendeur</th>
+                                                <th>Date Vente</th>
+                                                <th>Prix Vente</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+<script src="~/dashboard_assets/custom/managebuyersScript.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="createEditBuyer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informations sur la vente</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="proprieteForm">
+                    <input type="text" id="id" hidden />
+                    <div class="form-group">
+                        <label for="propriete">Propriete Disponnible :</label>
+                        <select class="form-control" id="propriete">
+                            @foreach (Propriete item in Model.properties)
+                            {
+                                <option value="@item.Id">@item.Type /\ @item.Taille</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="utilisateurAcheteur">Client Acheteur :</label>
+                        <select class="form-control" id="utilisateurAcheteur">
+                            @foreach (Utilisateur item in Model.utilisateurs)
+                            {
+                                <option value="@item.Id">@item.Prenom @item.Nom</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="utilisateurVendeur">Client Vendeur :</label>
+                        <select class="form-control" id="utilisateurVendeur">
+                            @foreach (Utilisateur item in Model.utilisateurs)
+                            {
+                                <option value="@item.Id">@item.Prenom @item.Nom</option>
+                            }
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dateVente">Date de vente :</label>
+                        <input type="date" class="form-control" placeholder="Date de naissance" id="dateVente">
+                    </div>
+                    <div class="form-group">
+                        <label for="prixvente">Prix de vente :</label>
+                        <input type="number" class="form-control" id="prixvente" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="submitVente">Soumettre</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,60 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\controllers\\estateprocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:controllers\\estateprocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\client\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\client\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\client\\mydemandes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\client\\mydemandes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\client\\myaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\client\\myaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\client\\header_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\client\\header_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\client\\footer_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\client\\footer_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\estatepro\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\estatepro\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\estatepro\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\estatepro\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\estatepro\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\estatepro\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\sql\\estatepromanager.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:sql\\estatepromanager.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\models\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:models\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\admin\\managedemandtache.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\admin\\managedemandtache.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\admin\\managedemands.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\admin\\managedemands.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\admin\\managebuyers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\admin\\managebuyers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\views\\admin\\header_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:views\\admin\\header_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|c:\\users\\hp_y\\source\\repos\\estatepromanager\\sql\\estatepromanager.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{21A36617-D6A2-4CA4-BE17-F1EB6156655A}|EstateProManager.csproj|solutionrelative:sql\\estatepromanager.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,174 +50,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErrorController.cs",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Controllers\\ErrorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ErrorController.cs",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Controllers\\ErrorController.cs",
-              "RelativeToolTip": "Controllers\\ErrorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:51:42.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "Controllers\\ClientController.cs",
-              "ViewState": "AQIAABQBAAAAAAAAAAAgwCUBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:36:46.453Z",
+              "Title": "EstateProManager.sql ",
+              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\SQL\\EstateProManager.sql",
+              "RelativeDocumentMoniker": "SQL\\EstateProManager.sql",
+              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\SQL\\EstateProManager.sql",
+              "RelativeToolTip": "SQL\\EstateProManager.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-11T11:23:22.811Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Header_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\Header_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Client\\Header_Layout.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\Header_Layout.cshtml",
-              "RelativeToolTip": "Views\\Client\\Header_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T10:33:58.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Footer_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\Footer_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Client\\Footer_Layout.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\Footer_Layout.cshtml",
-              "RelativeToolTip": "Views\\Client\\Footer_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T10:33:50.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Client\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Client\\Dashboard.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAABAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T10:33:26.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\EstatePro\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Views\\EstatePro\\SignUp.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\EstatePro\\SignUp.cshtml",
-              "RelativeToolTip": "Views\\EstatePro\\SignUp.cshtml",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAA4AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T11:41:54.932Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EstateProController.cs",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Controllers\\EstateProController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstateProController.cs",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Controllers\\EstateProController.cs",
-              "RelativeToolTip": "Controllers\\EstateProController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:22:55.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyDemandes.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\MyDemandes.cshtml",
-              "RelativeDocumentMoniker": "Views\\Client\\MyDemandes.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\MyDemandes.cshtml",
-              "RelativeToolTip": "Views\\Client\\MyDemandes.cshtml",
-              "ViewState": "AQIAACkAAAAAAAAAAAAYwDcAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T10:34:10.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MyAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\MyAccount.cshtml",
-              "RelativeDocumentMoniker": "Views\\Client\\MyAccount.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Client\\MyAccount.cshtml",
-              "RelativeToolTip": "Views\\Client\\MyAccount.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T10:34:03.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\EstatePro\\Home.cshtml",
-              "RelativeDocumentMoniker": "Views\\EstatePro\\Home.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\EstatePro\\Home.cshtml",
-              "RelativeToolTip": "Views\\EstatePro\\Home.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T11:41:28.392Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\EstatePro\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "Views\\EstatePro\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\EstatePro\\SignIn.cshtml",
-              "RelativeToolTip": "Views\\EstatePro\\SignIn.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T11:41:15.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Utilisateur.cs",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Models\\Utilisateur.cs",
-              "RelativeDocumentMoniker": "Models\\Utilisateur.cs",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Models\\Utilisateur.cs",
-              "RelativeToolTip": "Models\\Utilisateur.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:39:09.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\MainLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\MainLayout.cshtml",
-              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\MainLayout.cshtml",
-              "RelativeToolTip": "Views\\MainLayout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T11:25:26.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Utility.cs",
               "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Models\\Utility.cs",
               "RelativeDocumentMoniker": "Models\\Utility.cs",
               "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Models\\Utility.cs",
               "RelativeToolTip": "Models\\Utility.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:23:17.561Z"
+              "WhenOpened": "2024-11-11T11:21:12.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageDemandTache.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\ManageDemandTache.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageDemandTache.cshtml",
+              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\ManageDemandTache.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageDemandTache.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAArwCYAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:20:02.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManageDemands.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\ManageDemands.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageDemands.cshtml",
+              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\ManageDemands.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageDemands.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAArwDoAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:19:51.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageBuyers.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\ManageBuyers.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageBuyers.cshtml",
+              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\ManageBuyers.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageBuyers.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:19:45.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Header_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\Header_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Header_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\Views\\Admin\\Header_Layout.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Header_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T11:19:38.326Z",
+              "EditorCaption": ""
             }
           ]
         }

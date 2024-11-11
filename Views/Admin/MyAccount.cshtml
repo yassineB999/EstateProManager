@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "EstatePro | Mon Compte";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="containt-fluid">
+                    <!-- Content Header (Page header) -->
+                    <div class="modal-body">
+                        <div class="input-group mb-3"> <input class="form-control" type="text" id="id" name="id" hidden /> </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" value="@ViewBag.CIN" placeholder="CIN" id="cin">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-user"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" value="@ViewBag.PRENOM" placeholder="Prénom" id="prenom">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" value="@ViewBag.NOM" placeholder="Nom" id="nom">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" value="@ViewBag.EMAIL" placeholder="Email" id="email">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-envelope"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="date" class="form-control" placeholder="Date de naissance" id="dateNaissance">
+                            <input hidden id="fakedate" value="@ViewBag.DATENAISSANCE" />
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" value="@ViewBag.NUMEROTEL" placeholder="Numéro de téléphone" id="numeroTelephone">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-phone"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <textarea type="text" class="form-control" placeholder="Adresse" id="adresse">@ViewBag.ADRESSE</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="form-control btn-success" type="button" id="btnUpdate">Enregistrer Changement</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+<script src="~/dashboard_assets/custom/managemyaccountScript.js"></script>

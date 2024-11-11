@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "EstatePro | Gestion Propriete";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="containt-fluid">
+                    <!-- Content Header (Page header) -->
+                    <section class="content-header">
+                        <form id="proprieteForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="id" value="@ViewBag.ID" hidden required>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="type">Type :</label>
+                                        <input type="text" class="form-control" id="type" value="@ViewBag.TYPE" required>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="taille">Taille :</label>
+                                        <input type="number" class="form-control" id="taille" value="@ViewBag.TAILLE" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label for="emplacement">Emplacement :</label>
+                                <input type="text" class="form-control" id="emplacement" value="@ViewBag.EMPLACEMENT" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="caracteristiques">Caractéristiques :</label>
+                                <input type="text" class="form-control" id="caracteristiques" value="@ViewBag.CARACTERISTIQUES">
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="valeur">Valeur :</label>
+                                        <input type="number" class="form-control" id="valeur" value="@ViewBag.VALEUR">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="dateDeConstruction">Date de Construction :</label>
+                                        <input type="date" class="form-control" id="dateDeConstruction">
+                                        <input hidden id="fakedate" value="@ViewBag.DATECONSTRUCTION" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" style="float:right">
+
+                                <button type="button" class="btn btn-primary" id="submitProperty">Enregistrer les changements</button>
+                                <button type="button" class="btn btn-success" onclick="window.location.href='@Url.Action("DownloadImage",  new { id = @ViewBag.ID })'">Telecharger Image</button>
+                                <button type="button" class="btn btn-info" onclick="window.location.href='@Url.Action("DownloadDocument",  new { id = @ViewBag.ID })'">Telecharger Document</button>
+
+                            </div>
+                        </form>
+
+                    </section>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+
+<script src="~/dashboard_assets/custom/managepropertyScript.js"></script>

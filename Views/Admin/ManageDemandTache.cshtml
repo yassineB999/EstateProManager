@@ -1,0 +1,94 @@
+﻿@using EstateProManager.Models;
+@{
+    ViewData["Title"] = "EstatePro | Gestion Tache";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="containt-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Informations sur toute les demandes</h3>
+                                </div>
+
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <br />
+                                    <table id="demandetacheDataTable" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Type Demande</th>
+                                                <th>Prestataire</th>
+                                                <th>Detail Tache</th>
+                                                <th>Status Tache</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (Tach item in Model.taches)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdDemandeNavigation.TypeDemande)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdPrestataireNavigation.Prenom) @Html.DisplayFor(modelItem => item.IdPrestataireNavigation.Nom)
+                                                    </td>
+
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.DetailsTache)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.StatutTache)
+                                                    </td>
+                                                    <td>
+                                                        <button data-id="@item.Id" type="button" onclick="deleteDemandeTache(@item.Id)" class="btn btn-danger">
+                                                            <i class="fas fa-trash" aria-hidden="true"></i>
+                                                        </button>
+                                                        <button data-id="@item.Id" type="button" onclick="changeEtatTache(@item.Id)" class="btn btn-success">
+                                                            <i class="fas fa-check" aria-hidden="true"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Type Demande</th>
+                                                <th>Prestataire</th>
+                                                <th>Detail Tache</th>
+                                                <th>Status Tache</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+<script src="~/dashboard_assets/custom/managedemandtacheScript.js"></script>

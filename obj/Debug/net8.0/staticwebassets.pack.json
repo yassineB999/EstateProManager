@@ -1,6 +1,38 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managebuyersScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managebuyersScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managedemandsScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managedemandsScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managedemandtacheScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managedemandtacheScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managemyaccountScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managemyaccountScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managepropertiesScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managepropertiesScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managepropertyScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managepropertyScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\managerentalsScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\managerentalsScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\custom\\manageusersScript.js",
+      "PackagePath": "staticwebassets\\dashboard_assets\\custom\\manageusersScript.js"
+    },
+    {
       "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboard_assets\\dist\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\dashboard_assets\\dist\\css\\adminlte.css"
     },
@@ -8231,6 +8263,22 @@
     {
       "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\dashboardclient_assets\\custom\\mypropertiesScript.js",
       "PackagePath": "staticwebassets\\dashboardclient_assets\\custom\\mypropertiesScript.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\error_assets\\error_404\\css\\style.css",
+      "PackagePath": "staticwebassets\\error_assets\\error_404\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\error_assets\\error_404\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\error_assets\\error_404\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\error_assets\\error_500\\script.js",
+      "PackagePath": "staticwebassets\\error_assets\\error_500\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\error_assets\\error_500\\style.css",
+      "PackagePath": "staticwebassets\\error_assets\\error_500\\style.css"
     },
     {
       "Id": "C:\\Users\\HP_Y\\source\\repos\\EstateProManager\\wwwroot\\landing_assets\\css\\aos.css",

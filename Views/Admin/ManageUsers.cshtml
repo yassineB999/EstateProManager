@@ -1,0 +1,216 @@
+﻿@using EstateProManager.Models;
+@{
+    ViewData["Title"] = "EstatePro | Gestion Utilisateurs";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="containt-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Informations Utilisateurs</h3>
+                                </div>
+                                
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <button class="form-control btn-primary new-btn">Creer Un nouveau utilisateur</button>
+                                    <br />
+                                    <table id="usersDataTable" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>CIN</th>
+                                                <th>Nom</th>
+                                                <th>Prenom</th>
+                                                <th>Email Adresse</th>
+                                                <th>Date de naissance</th>
+                                                <th>Numero de telephone</th>
+                                                <th>Adresse</th>
+                                                <th>Nom du role</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (Utilisateur item in Model.users)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Cin)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Nom)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Prenom)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Email)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Birthdate)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.NumeroDeTelephone)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.AdressePostale)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdRoleNavigation.Libelle)
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary edit-btn"
+                                                                data-toggle="modal" data-target="#editcreatemodal"
+                                                                data-id="@item.Id" data-cin="@item.Cin" data-nom="@item.Nom"
+                                                                data-prenom="@item.Prenom" data-email="@item.Email"
+                                                                data-birthdate="@item.Birthdate" data-phone="@item.NumeroDeTelephone"
+                                                                data-address="@item.AdressePostale" data-role="@item.IdRole">
+                                                            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                                                        </button>
+
+                                                        <button type="button" class="btn btn-danger" onclick="deleteUser(@item.Id)">
+                                                            <i class="fas fa-trash" aria-hidden="true"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>CIN</th>
+                                                <th>Nom</th>
+                                                <th>Prenom</th>
+                                                <th>Email Adresse</th>
+                                                <th>Date de naissance</th>
+                                                <th>Numero de telephone</th>
+                                                <th>Adresse</th>
+                                                <th>Nom du role</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+<script src="~/dashboard_assets/custom/manageusersScript.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="editcreatemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modaltitle">RANDOM</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3"> <input class="form-control" type="text" id="id" name="id" hidden /> </div>
+               
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="CIN" id="cin">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Prénom" id="prenom">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-user"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nom" id="nom">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-user"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" id="email">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" placeholder="Date de naissance" id="dateNaissance">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Numéro de téléphone" id="numeroTelephone">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-phone"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <textarea type="text" class="form-control" placeholder="Adresse" id="adresse"></textarea>
+                </div>
+                
+                <div class="input-group mb-3">
+                    <select class="form-control" id="role_type">
+                        @foreach (Role item in Model.roles)
+                        {
+                            <option value="@item.Id">@item.Libelle</option>
+                        }
+                    </select>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closemodal" data-dismiss="modal">Quitter</button>
+                <button type="button" class="btn btn-primary" id="editcreate">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>

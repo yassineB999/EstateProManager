@@ -1,0 +1,96 @@
+﻿@using EstateProManager.Models;
+@{
+    ViewData["Title"] = "EstatePro | Gestion Demandes";
+    Layout = "~/Views/MainLayout.cshtml";
+}
+
+<div class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Header_Layout -->
+        @Html.Partial("Header_Layout")
+        <!-- ./Header_Layout -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            <section class="content">
+                <div class="containt-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Informations sur toute les demandes</h3>
+                                </div>
+
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <br />
+                                    <table id="demandeDataTable" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Propriete</th>
+                                                <th>Demandeur</th>
+                                                <th>Type Demande</th>
+                                                <th>Detail Demande</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (Demande item in Model.demands)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdProprieteNavigation.Type) @Html.DisplayFor(modelItem => item.IdProprieteNavigation.Taille)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.IdUtilisateurNavigation.Prenom) @Html.DisplayFor(modelItem => item.IdUtilisateurNavigation.Nom)
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.TypeDemande)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.DetailsDemande)
+                                                    </td>
+                                                    <td>
+                                                        <button data-id="@item.Id" type="button" onclick="deleteDemande(@item.Id)" class="btn btn-danger">
+                                                            <i class="fas fa-trash" aria-hidden="true"></i>
+                                                        </button>
+                                                        <a href="@Url.Action("ManageDemandTache", new { id = item.Id })">
+                                                            <button type="button" class="btn btn-info">
+                                                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                                            </button>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Propriete</th>
+                                                <th>Demandeur</th>
+                                                <th>Type Demande</th>
+                                                <th>Detail Demande</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Footer_Layout -->
+        @Html.Partial("Footer_Layout")
+        <!-- ./Footer_Layout -->
+    </div>
+    <!-- ./wrapper -->
+</div>
+
+<script src="~/dashboard_assets/custom/managedemandsScript.js"></script>
